@@ -1,11 +1,52 @@
-.movie-card {
+.red-card {
   max-width: 250px;
   box-sizing: border-box;
-  border: 30px solid purple;
+  border: 30px solid #A6290D;
+  background-color: #A6290D;
   padding: 10px;
   display: flex;
   flex-direction: column;
 }
+
+.orange-card {
+    max-width: 250px;
+    box-sizing: border-box;
+    border: 30px solid #F27405;
+    background-color: #F27405;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .yellow-card {
+    max-width: 250px;
+    box-sizing: border-box;
+    border: 30px solid #F2B705;
+    background-color: #F2B705;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .green-card {
+    max-width: 250px;
+    box-sizing: border-box;
+    border: 30px solid #3B7302;
+    background-color: #3B7302;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blue-card {
+    max-width: 250px;
+    box-sizing: border-box;
+    border: 30px solid #0367A6;
+    background-color: #0367A6;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 
 .card-poster {
   max-width: 250px;
