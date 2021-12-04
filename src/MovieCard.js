@@ -17,9 +17,10 @@ function MovieCard({title,posterPath,averageRating}) {
 
   return (
     <div className={cardColor}>
-      <h3>{title}</h3>
+      {/* <h3>{title}</h3> */}
       <img src={posterPath} alt= "poster image of movie" className="card-poster"/>
-      <h5>{averageRating.toFixed(1)}⭐</h5>
+      <h3>{title}</h3>
+      <p>{averageRating.toFixed(1)}  ⭐</p>
     </div>
   )
 }

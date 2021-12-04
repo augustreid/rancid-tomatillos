@@ -2,17 +2,19 @@
   max-width: 250px;
   box-sizing: border-box;
   border: 30px solid #A6290D;
-  background-color: #A6290D;
+  background-color: rgba(166, 41, 13, 0.7);
   padding: 10px;
   display: flex;
   flex-direction: column;
+  font-size: 14pt;
+  color: white;
 }
 
 .orange-card {
     max-width: 250px;
     box-sizing: border-box;
     border: 30px solid #F27405;
-    background-color: #F27405;
+    background-color: rgba(242, 116, 5, 0.7);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -22,7 +24,7 @@
     max-width: 250px;
     box-sizing: border-box;
     border: 30px solid #F2B705;
-    background-color: #F2B705;
+    background-color: rgba(242, 183, 5, 0.7);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -32,7 +34,7 @@
     max-width: 250px;
     box-sizing: border-box;
     border: 30px solid #3B7302;
-    background-color: #3B7302;
+    background-color: rgba(59, 115, 2, 0.7);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -42,14 +44,14 @@
     max-width: 250px;
     box-sizing: border-box;
     border: 30px solid #0367A6;
-    background-color: #0367A6;
+    background-color: rgba(3, 103, 166, 0.7);
     padding: 10px;
     display: flex;
     flex-direction: column;
   }
 
 .card-poster {
-  max-width: 250px;
+  max-width: 200px;
   height: auto;
-  margin-top: 5%;
+  margin: 2%;
 }
