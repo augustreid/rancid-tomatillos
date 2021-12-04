@@ -1,0 +1,14 @@
+.movie-card {
+  max-width: 250px;
+  box-sizing: border-box;
+  border: 30px solid purple;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-poster {
+  max-width: 250px;
+  height: auto;
+  margin-top: 5%;
+}
