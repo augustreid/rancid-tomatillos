@@ -1,10 +1,12 @@
-import React from 'react';
+// import React from 'react';
 import './Description.css';
 
 function Description() {
-  return (
+//   return (
+    
+//       /* map out title, releasedate, rating */
    
-  );
+//   )
 }
 
 export default Description;

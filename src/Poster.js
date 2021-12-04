@@ -1,10 +1,10 @@
-import React from 'react';
+// import React from 'react';
 import './Poster.css';
 
 function Poster() {
-  return (
+//   return (
    
-  );
+//   );
 }
 
 export default Poster;
