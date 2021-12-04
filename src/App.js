@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import movieData from './movieData';
 import './App.css';
 import Header from './Header';
+import Movies from './Movies';
+import Detail from './Detail';
 
 class App extends Component {
   constructor() {
@@ -11,13 +13,15 @@ class App extends Component {
     }
   }
 
+  render() {
   return (
     <main>
-   <Header/>
-   <Movies movieInfo={this.state.movies}/>
-   <Details/> 
-   </main>
-  );
+      <Header/>
+      <Movies moviesInfo={this.state.movies}/>
+      {/* <Detail/>  */}
+    </main>
+    )
+  }
 }
 
 export default App;

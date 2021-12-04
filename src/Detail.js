@@ -1,6 +1,8 @@
 import React from 'react';
 import Description from './Description';
 import './Detail.css';
+import Poster from './Poster';
+import Button from './Button';
 
 function Detail() {
   return (
