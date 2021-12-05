@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #FFF8E3; */
+    background-color: rgba(190, 223, 4, 0.25);
+    color: #3B7302;
+    padding: 0% 4%;
+    font-size: 18pt;
+}
+
+img {
+  max-width: 150px;
+}

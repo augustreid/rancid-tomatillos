@@ -1,7 +1,7 @@
 import React from 'react';
 import './MovieCard.css';
 
-function MovieCard({title,posterPath,averageRating}) {
+function MovieCard({title, posterPath, averageRating, displayDetails, id}) {
   let cardColor;
   if (averageRating < 4) {
     cardColor = "red-card";
