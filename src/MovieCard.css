@@ -1,13 +1,14 @@
 .movie-card {
-    max-width: 250px;
+    max-width: 220px;
     box-sizing: border-box;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 12pt;
     font-weight: bold;
     color: white;
+    margin: 2%;
   }
 
 .red-card {
@@ -38,12 +39,16 @@
 .card-poster {
   max-width: 200px;
   height: auto;
-  margin: 2%;
+  margin: 10%;
+  margin-bottom: none;
 }
 
 .title-rating {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+}
+
+p {
+  margin: 1% 8%;
 }
