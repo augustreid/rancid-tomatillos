@@ -4,13 +4,12 @@ import './Detail.css';
 import Poster from './Poster';
 import Button from './Button';
 
-function Detail() {
+function Detail({singleMovie, backToMain}) {
   return (
-   /* event listener for card, display card */ 
    <div>
-       <Poster/>
-       <Description/>
-       <Button/>
+       <Poster title={singleMovie.title} backdropPath={singleMovie.backdrop_path}/>
+       <Description title={singleMovie.title} rating={singleMovie.average_rating}/>
+       <Button backToMain={backToMain}/>
    </div>
   );
 }
