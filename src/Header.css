@@ -6,6 +6,8 @@
     color: #2c5701;
     padding: 0% 4%;
     font-size: 18pt;
+    border-bottom: solid 3px #2c5701;
+    font-family: 'Secular One', sans-serif;
 }
 
 img {
