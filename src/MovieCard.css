@@ -11,6 +11,10 @@
     margin: 2%;
   }
 
+   .movie-card:hover {
+    cursor: pointer;
+  }
+
 .red-card {
   border: 30px solid #A6290D;
   background-color: rgba(166, 41, 13, 0.7);
