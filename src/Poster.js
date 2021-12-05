@@ -1,10 +1,10 @@
-// import React from 'react';
+import React from 'react';
 import './Poster.css';
 
-function Poster() {
-//   return (
-   
-//   );
+function Poster({backdropPath, title}) {
+  return (
+   <img src={backdropPath} alt={`scene from ${title}`}/>
+  )
 }
 
 export default Poster;

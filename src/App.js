@@ -9,16 +9,30 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      movies: movieData.movies
+      movies: movieData.movies,
+      singleMovie: null
     }
+  }
+
+  displayDetails = (event, id) => {
+    event.preventDefault()
+    const selectedMovie = this.state.movies.find((movie) => {
+      return movie.id === id;
+    })
+    this.setState({movies: movieData.movies, singleMovie: selectedMovie})
+  }
+
+  backToMain = () => {
+    this.setState({singleMovie: null})
   }
 
   render() {
   return (
     <main>
       <Header/>
-      <Movies moviesInfo={this.state.movies}/>
-      {/* <Detail/>  */}
+      {this.state.singleMovie ? 
+      <Detail backToMain={this.backToMain} singleMovie={this.state.singleMovie}/> : 
+      <Movies displayDetails={this.displayDetails} moviesInfo={this.state.movies}/>}
     </main>
     )
   }

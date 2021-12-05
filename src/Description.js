@@ -1,12 +1,13 @@
-// import React from 'react';
+import React from 'react';
 import './Description.css';
 
-function Description() {
-//   return (
-    
-//       /* map out title, releasedate, rating */
-   
-//   )
+function Description({title, rating}) {
+  return (
+    <div>
+    <h2>{title}</h2>
+    <h3>{rating.toFixed(1)}  ⭐️</h3>
+    </div>
+  )
 }
 
 export default Description;
