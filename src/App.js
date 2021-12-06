@@ -22,10 +22,10 @@ class App extends Component {
 
   displayDetails = (event, id) => {
     event.preventDefault()
-    const selectedMovie = this.state.movies.find((movie) => {
-      return movie.id === id;
-    })
-    this.setState({movies: movieData.movies, singleMovie: selectedMovie})
+    fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${id}`)
+    .then(response => response.json())
+    .then(data => this.setState({movies: movieData.movies, singleMovie: data.movie}))
+    
   }
 
   backToMain = () => {
