@@ -9,17 +9,25 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      movies: movieData.movies,
-      singleMovie: null
+      movies: [],
+      singleMovie: null,
+      error: false
     }
   }
+  componentDidMount = () => {
+    fetch("https://rancid-tomatillos.herokuapp.com/api/v2/movies")
+      .then(response => response.json())
+      .then(data => this.setState({movies: data.movies}))
+      .catch(error => this.setState({error: true}))
+  }
+
 
   displayDetails = (event, id) => {
     event.preventDefault()
-    const selectedMovie = this.state.movies.find((movie) => {
-      return movie.id === id;
-    })
-    this.setState({movies: movieData.movies, singleMovie: selectedMovie})
+    fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${id}`)
+    .then(response => response.json())
+    .then(data => this.setState({movies: movieData.movies, singleMovie: data.movie}))
+    .catch(error => this.setState({error: true}))  
   }
 
   backToMain = () => {
@@ -30,6 +38,7 @@ class App extends Component {
   return (
     <main>
       <Header/>
+      {this.state.error && <h3>Sorry, server not able to fetch data. Please try again later.</h3>}
       {this.state.singleMovie ? 
       <Detail backToMain={this.backToMain} singleMovie={this.state.singleMovie}/> : 
       <Movies displayDetails={this.displayDetails} moviesInfo={this.state.movies}/>}

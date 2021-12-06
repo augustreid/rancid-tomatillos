@@ -9,7 +9,7 @@ function Detail({singleMovie, backToMain}) {
    <main className="details-page">
      <div className="movie-details">
        <Poster title={singleMovie.title} backdropPath={singleMovie.backdrop_path}/>
-       <Description title={singleMovie.title} rating={singleMovie.average_rating}/>
+       <Description title={singleMovie.title} summary={singleMovie.overview} releaseDate={singleMovie.release_date} rating={singleMovie.average_rating}/>
       </div>
        <Button backToMain={backToMain}/>
    </main>
