@@ -3,7 +3,9 @@ import './Poster.css';
 
 function Poster({backdropPath, title}) {
   return (
-   <img src={backdropPath} alt={`scene from ${title}`}/>
+    <div className="img-container">
+   <img className="poster" src={backdropPath} alt={`scene from ${title}`}/>
+   </div>
   )
 }
 

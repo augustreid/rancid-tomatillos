@@ -1,0 +1,9 @@
+.img-container {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.poster {
+    min-width: 100%;
+}

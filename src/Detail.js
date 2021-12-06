@@ -6,11 +6,11 @@ import Button from './Button';
 
 function Detail({singleMovie, backToMain}) {
   return (
-   <div>
+   <main className="details-page">
        <Poster title={singleMovie.title} backdropPath={singleMovie.backdrop_path}/>
        <Description title={singleMovie.title} rating={singleMovie.average_rating}/>
        <Button backToMain={backToMain}/>
-   </div>
+   </main>
   );
 }
 
