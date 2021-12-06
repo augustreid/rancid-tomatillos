@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(190, 223, 4, 0.25);
+    color: #2c5701;
+    padding: 0% 4%;
+    font-size: 18pt;
+    border-bottom: solid 3px #2c5701;
+    font-family: 'Secular One', sans-serif;
+    text-shadow: -1px 1px 2px #2c570152,
+				          1px 1px 2px #2c570152,
+				          1px 1px 0 #2c570152,
+				         1px 1px 0 #2c570152;
+}
+
+img {
+  max-width: 150px;
+}
