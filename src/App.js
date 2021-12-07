@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Routes, Route, Link} from 'react-router-dom';
 import movieData from './movieData';
 import './App.css';
 import Header from './Header';
@@ -38,10 +39,10 @@ class App extends Component {
   return (
     <main>
       <Header/>
-      {this.state.error && <h3>Sorry, server not able to fetch data. Please try again later.</h3>}
-      {this.state.singleMovie ? 
-      <Detail backToMain={this.backToMain} singleMovie={this.state.singleMovie}/> : 
-      <Movies displayDetails={this.displayDetails} moviesInfo={this.state.movies}/>}
+      <Routes>
+        <Route path="/" element={<Movies moviesInfo={this.state.movies}/>}/>
+        <Route path="/:id"  element={<Detail moviesInfo={this.state.movies}/>}/>
+      </Routes>
     </main>
     )
   }
