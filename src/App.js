@@ -20,16 +20,16 @@ class App extends Component {
       .then(data => this.setState({movies: data.movies}))
       .catch(error => this.setState({error: true}))
   }
-  
+
   render() {
-  return (
-    <main>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Movies moviesInfo={this.state.movies} />}/>
-        <Route path="/:id"  element={<Detail moviesInfo={this.state.movies} />}/>
-      </Routes>
-    </main>
+    return (
+      <main>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Movies moviesInfo={this.state.movies} />}/>
+          <Route path="/:id"  element={<Detail moviesInfo={this.state.movies} />}/>
+        </Routes>
+      </main>
     )
   }
 }

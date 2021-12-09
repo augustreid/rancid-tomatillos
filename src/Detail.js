@@ -7,11 +7,9 @@ const Detail = () => {
   const currentFilm = useParams().id;
 
   return (
-   <main className="details-page">
-     <div className="movie-details">
-       <Description currentFilmId={currentFilm}/>
-    </div>
-   </main>
+    <div className="movie-details">
+      <Description currentFilmId={currentFilm}/>
+    </div> 
   );
 }
 
