@@ -1,14 +1,12 @@
 describe('Rancid Tomatillos main page display', () => {
 
-    beforeEach(() => {
-        cy.visit("http://localhost:3000")
-    });
+    // beforeEach(() => {
+    //     cy.visit("http://localhost:3000")
+    // });
 
     it('Should be able to visit the page and render the correct elements"', () => {
-        cy.intercept("GET", "http://localhost:3000", {
-             statusCode: 200,    
-             body: {
-                "movies": [
+        cy.intercept("GET", "https://rancid-tomatillos.herokuapp.com/api/v2/movies", {
+              "movies": [
                   {
                     "id": 694919,
                     "poster_path": "https://image.tmdb.org/t/p/original//6CoRTJTmijhBLJTUNoVSUNxZMEI.jpg",
@@ -33,8 +31,8 @@ describe('Rancid Tomatillos main page display', () => {
                     "average_rating": 5.428571428571429,
                     "release_date": "2020-08-20"
                   }]
-            }
-      }) 
+                }) 
+      cy.visit("http://localhost:3000")
         .get("main")
         .contains("Rancid Tomatillos")
     });
