@@ -1,25 +1,25 @@
-import React from 'react';
-import MovieCard from './MovieCard';
-import './Movies.css';
+import React from "react";
+import MovieCard from "./MovieCard";
+import "./Movies.css";
+import { Link } from "react-router-dom";
 
-function Movies({moviesInfo, displayDetails}) {
-    const film = moviesInfo.map(movie => {
-      return (
+function Movies({ moviesInfo }) {
+  const film = moviesInfo.map((movie) => {
+    return (
+      <Link to={`/${movie.id}`} key={movie.id}>
         <MovieCard
-            displayDetails = {displayDetails}
-            id = {movie.id}
-            key = {movie.id}
-            title = {movie.title}
-            posterPath = {movie.poster_path}
-            averageRating = {movie.average_rating}
+          id={movie.id}
+          title={movie.title}
+          posterPath={movie.poster_path}
+          averageRating={movie.average_rating.toFixed(1)}
         />
-      )
-    })
-  return (
-      <div className="movies-container">
-          {film}
-      </div>
-  )
+      </Link>
+    );
+  });
+  
+  return (<div className="movies-container">
+            {film}
+          </div>);
 }
 
 export default Movies;

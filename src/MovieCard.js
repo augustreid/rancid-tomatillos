@@ -1,7 +1,7 @@
-import React from 'react';
-import './MovieCard.css';
+import React from "react";
+import "./MovieCard.css";
 
-function MovieCard({title, posterPath, averageRating, displayDetails, id}) {
+function MovieCard({ title, posterPath, averageRating }) {
   let cardColor;
   if (averageRating < 4) {
     cardColor = "red-card";
@@ -16,14 +16,18 @@ function MovieCard({title, posterPath, averageRating, displayDetails, id}) {
   }
 
   return (
-    <div onClick={(event) => displayDetails(event, id)} className={`${cardColor} movie-card`}>
-      <img src={posterPath} alt= "poster image of movie" className="card-poster"/>
+    <div className={`${cardColor} movie-card`}>
+      <img
+        src={posterPath}
+        alt="poster image of movie"
+        className="card-poster"
+      />
       <div className="title-rating">
         <p>{title}</p>
-        <p>{averageRating.toFixed(1)}  ⭐</p>
+        <p>{averageRating} ⭐</p>
       </div>
-      </div>
-      )
+    </div>
+  );
 }
 
 export default MovieCard;
