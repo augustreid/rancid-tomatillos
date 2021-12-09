@@ -1,9 +1,10 @@
 import React from 'react';
 import './Button.css';
+import { Link } from 'react-router-dom';
 
 function Button({backToMain}) {
   return (
-   <button onClick={() => backToMain()}> ⬅ Back to Main</button>
+    <Link to="/" key={Date.now()}><button onClick={() => backToMain()}> ⬅ Back to Main</button></Link>
   );
 }
 
