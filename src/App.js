@@ -46,7 +46,7 @@ class App extends Component {
         {!this.state.loading && <Genre loading={this.state.loading} getDetailData={this.getDetailData} detailData={this.state.filmsInfo}/>}
         <Routes>
           <Route path="/" element={<Movies moviesInfo={this.state.movies} detailData={this.state.filmsInfo} getDetailData={this.getDetailData}/>}/>
-          <Route path="/:id"  element={<Detail moviesInfo={this.state.movies} />}/>
+          <Route path="/:id"  element={<Detail moviesInfo={this.state.movies} detailData={this.state.filmsInfo}/>}/>
         </Routes>
       </main>
     )
