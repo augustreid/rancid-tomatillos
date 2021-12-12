@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import { NavLink, Routes, Route } from "react-router-dom";
+import { NavLink, Routes, Route, Link } from "react-router-dom";
 import GenreDisplay from "./GenreDisplay";
 
 class Genre extends Component {
@@ -14,10 +14,10 @@ class Genre extends Component {
       render() {
           return (
                 <nav>
-                  <NavLink to={"/Action"}>Action</NavLink>
+                  <Link to={"/Action"}>Action</Link>
                   <NavLink to={"/Comedy"}>Comedy</NavLink>
                   <NavLink to={"/Crime"}>Crime</NavLink>
-                  <NavLink to={"/drama"}>Drama</NavLink>
+                  <NavLink to={"/Drama"}>Drama</NavLink>
                   <NavLink to={"/Family"}>Family</NavLink>
                   <NavLink to={"/Horror"}>Horror</NavLink>
                   <NavLink to={"/Thriller"}>Thriller</NavLink>

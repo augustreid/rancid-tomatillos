@@ -41,7 +41,7 @@ import Button from './Button';
 //           <h2>{this.state.singleMovie.title}</h2>
 //           <p>{this.state.singleMovie.release_date}</p>
 //           <p>{this.state.singleMovie.overview}</p>
-//           <h3>{this.state.singleMovie.average_rating.toFixed(1)}  ⭐️</h3>
+          // <h3>{this.state.singleMovie.average_rating.toFixed(1)}  ⭐️</h3>
 //           <Button backToMain={this.backToMain}/>
 //         </section>}
 //         </>
@@ -52,19 +52,20 @@ import Button from './Button';
 function Description({currentFilmId, detailData}) {
       // const allFilms = this.props.detailData
       // const filmId = Number(this.props.currentFilmId)
+      console.log("Description test", detailData)
       const currentMovie = detailData.find((film) => {
         return film.movie.id === Number(currentFilmId)
     })
     return (
             <>
-            {!detailData && <section>
-              <Poster backdropPath={currentMovie.backdrop_path} title={currentMovie.title}/>
-              <h2>{currentMovie.title}</h2>
-              <p>{currentMovie.release_date}</p>
-              <p>{currentMovie.overview}</p>
-              <h3>{currentMovie.average_rating.toFixed(1)}  ⭐️</h3>
+            <section>
+              <Poster backdropPath={currentMovie.movie.backdrop_path} title={currentMovie.movie.title}/>
+              <h2>{currentMovie.movie.title}</h2>
+              <p>{currentMovie.movie.release_date}</p>
+              <p>{currentMovie.movie.overview}</p>
+              <h3>{currentMovie.movie.average_rating.toFixed(1)}  ⭐️</h3>
               <Button />
-            </section>}
+            </section>
             </>
         ) 
 }

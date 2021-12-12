@@ -4,6 +4,7 @@ import MovieCard from "./MovieCard";
 
 function GenreDisplay({detailData}) {
     const movieGenre = useParams().genre
+
     console.log(detailData, "movie deets")
     const filteredMovies = detailData.filter((film) => {
         return film.movie.genres.includes(movieGenre)

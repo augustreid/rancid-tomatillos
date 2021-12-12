@@ -42,12 +42,14 @@ class App extends Component {
   render() {
     return (
       <main>
+        {!this.state.loading && <div>
         <Header/>
-        {!this.state.loading && <Genre loading={this.state.loading} getDetailData={this.getDetailData} detailData={this.state.filmsInfo}/>}
+        <Genre loading={this.state.loading} getDetailData={this.getDetailData} detailData={this.state.filmsInfo}/>
         <Routes>
           <Route path="/" element={<Movies moviesInfo={this.state.movies} detailData={this.state.filmsInfo} getDetailData={this.getDetailData}/>}/>
-          <Route path="/:id"  element={<Detail moviesInfo={this.state.movies} detailData={this.state.filmsInfo}/>}/>
+          {/* <Route path="/:id"  element={<Detail moviesInfo={this.state.movies} detailData={this.state.filmsInfo}/>}/> */}
         </Routes>
+        </div>}
       </main>
     )
   }
