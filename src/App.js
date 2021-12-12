@@ -23,19 +23,6 @@ class App extends Component {
       .then(data => this.setState({movies: data.movies, loading: false}))
       .catch(error => this.setState({error: true}))
   }
-
-  //  getDetailData = () => {
-  //   const moviesId = this.state.movies.map((movie)=> {
-  //     return movie.id;
-  //   })
-  //   const movieDetails = []
-  //       moviesId.forEach((id) => {
-  //       fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${id}`)
-  //       .then(response => response.json()) 
-  //       .then(data => movieDetails.push(data))
-  //     })
-  //   this.setState({filmsInfo: movieDetails})
-  // }
   
   getDetailData = () => {
     const moviesId = this.state.movies.map((movie)=> {
@@ -60,7 +47,6 @@ class App extends Component {
         <Routes>
           <Route path="/" element={<Movies moviesInfo={this.state.movies} />}/>
           <Route path="/:id"  element={<Detail moviesInfo={this.state.movies} />}/>
-          {/* <Route path="/:genre" element={<Genre moviesInfo={this.state.movies}/>}/> */}
         </Routes>
       </main>
     )
