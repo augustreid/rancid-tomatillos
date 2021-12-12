@@ -12,13 +12,13 @@ class Description extends Component {
     }
   }
 
-  componentDidMount = () => {
-      fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${this.props.currentFilmId}`)
-      .then(response => response.json())
-      .then(data => this.setState({singleMovie: data.movie, loading: false}))
-      .then(this.render())
-      .catch(error => this.setState({error: true}))  
-    }
+  // componentDidMount = () => {
+  //     fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${this.props.currentFilmId}`)
+  //     .then(response => response.json())
+  //     .then(data => this.setState({singleMovie: data.movie, loading: false}))
+  //     .then(this.render())
+  //     .catch(error => this.setState({error: true}))  
+  //   }
   
   backToMain = () => {
       this.setState({singleMovie: null})
@@ -29,7 +29,7 @@ class Description extends Component {
       <>
         {this.state.loading ? <p>Loading Be Patient!</p> :
         <div>
-          <Poster backdropPath={this.state.singleMovie.backdrop_path} title={this.state.singleMovie.title}/>
+          <Poster backdropPath={this.state.singleMoviebackdrop_path} title={this.state.singleMovie.title}/>
           <h2>{this.state.singleMovie.title}</h2>
           <p>{this.state.singleMovie.release_date}</p>
           <p>{this.state.singleMovie.overview}</p>
