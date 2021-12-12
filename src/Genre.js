@@ -9,12 +9,11 @@ class Genre extends Component {
 
     componentDidMount = () => {
         this.props.getDetailData();
-        // this.setState({detailData: this.props.detailData})
     }
 
       render() {
           return (
-              <nav>
+                <nav>
                   <NavLink to={"/Action"}>Action</NavLink>
                   <NavLink to={"/Comedy"}>Comedy</NavLink>
                   <NavLink to={"/Crime"}>Crime</NavLink>

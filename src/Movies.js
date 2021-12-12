@@ -1,9 +1,10 @@
 import React from "react";
 import MovieCard from "./MovieCard";
 import "./Movies.css";
+import Genre from "./Genre"
 import { Link } from "react-router-dom";
 
-function Movies({ moviesInfo }) {
+function Movies({ moviesInfo, loading, getDetailData, detailData }) {
   const film = moviesInfo.map((movie) => {
     return (
       <Link to={`/${movie.id}`} key={movie.id}>
