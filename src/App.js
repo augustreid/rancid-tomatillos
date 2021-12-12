@@ -24,33 +24,32 @@ class App extends Component {
       .catch(error => this.setState({error: true}))
   }
 
-   getDetailData = () => {
-    const moviesId = this.state.movies.map((movie)=> {
-      return movie.id;
-    })
-    const movieDetails = []
-        moviesId.forEach((id) => {
-        fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${id}`)
-        .then(response => response.json()) 
-        .then(data => movieDetails.push(data))
-      })
-    this.setState({filmsInfo: movieDetails})
-  }
-  
-  // getDetailData = () => {
+  //  getDetailData = () => {
   //   const moviesId = this.state.movies.map((movie)=> {
   //     return movie.id;
   //   })
-  //   const allMovies = [];
-  //   console.log("moviesId", moviesId)
-  //   for (let i = 0; i < moviesId.length; i++) {
-  //     setTimeout(() => {fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${moviesId[i]}`)
-  //     .then(response => response.json()) 
-  //     .then(data => allMovies.push(data))
-  //     }, 500)
-  //   }
-  //   this.setState({ filmsInfo: allMovies })
+  //   const movieDetails = []
+  //       moviesId.forEach((id) => {
+  //       fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${id}`)
+  //       .then(response => response.json()) 
+  //       .then(data => movieDetails.push(data))
+  //     })
+  //   this.setState({filmsInfo: movieDetails})
   // }
+  
+  getDetailData = () => {
+    const moviesId = this.state.movies.map((movie)=> {
+      return movie.id;
+    })
+    const allMovies = [];
+    for (let i = 0; i < moviesId.length; i++) {
+      setTimeout(() => {fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${moviesId[i]}`)
+      .then(response => response.json()) 
+      .then(data => allMovies.push(data))
+      }, 500)
+    }
+    this.setState({ filmsInfo: allMovies })
+  }
 
 
   render() {
