@@ -19,6 +19,7 @@
 
    .movie-card:hover {
     cursor: pointer;
+    border: 4px solid #3B7302;
   }
 
 .red-card {

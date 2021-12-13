@@ -14,7 +14,7 @@ function Description({currentFilmId, detailData}) {
           <h2>{currentMovie.movie.title}</h2>
           <p>{currentMovie.movie.release_date}</p>
           <p>{currentMovie.movie.overview}</p>
-          <h3>{currentMovie.movie.average_rating.toFixed(1)}  :star:️</h3>
+          <h3>{currentMovie.movie.average_rating.toFixed(1)}  ⭐️</h3>
           <Button />
         </section>
         </>
