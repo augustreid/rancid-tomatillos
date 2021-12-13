@@ -15,7 +15,8 @@ class Genre extends Component {
 
       render() {
           return (
-                <nav>
+                <div className="genre-page">
+                <nav className="nav-bar">
                   <Button />
                   <NavLink to={"/Action"}>Action</NavLink>
                   <NavLink to={"/Comedy"}>Comedy</NavLink>
@@ -25,10 +26,11 @@ class Genre extends Component {
                   <NavLink to={"/Horror"}>Horror</NavLink>
                   <NavLink to={"/Thriller"}>Thriller</NavLink>
                   <NavLink to={"/Romance"}>Romance</NavLink>
+                  </nav>
                   <Routes>
                      {this.props.detailData && <Route path="/:genre" element={<GenreDisplay detailData={this.props.detailData} moviesInfo={this.props.moviesInfo}/>}/>}
                   </Routes>
-              </nav>
+              </div>
           )
       }
     }
