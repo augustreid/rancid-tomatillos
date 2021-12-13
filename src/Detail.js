@@ -3,12 +3,12 @@ import Description from './Description';
 import './Detail.css';
 import { useParams} from 'react-router-dom';
 
-const Detail = () => {
+const Detail = ({detailData}) => {
   const currentFilm = useParams().id;
 
   return (
     <div className="movie-details">
-      <Description currentFilmId={currentFilm}/>
+      <Description detailData= {detailData} currentFilmId={currentFilm}/>
     </div> 
   );
 }
