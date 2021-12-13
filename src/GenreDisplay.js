@@ -1,5 +1,6 @@
 import React from "react";
 import {useParams, Link} from "react-router-dom";
+import "./Movies.css"
 import MovieCard from "./MovieCard";
 
 function GenreDisplay({detailData}) {

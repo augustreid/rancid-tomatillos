@@ -1,0 +1,10 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFF8E3;
+    font-size: 18pt;
+    border: none;
+    font-family: 'Secular One', sans-serif;
+    color: #2c5701;
+    padding-top: 2%;
+}
