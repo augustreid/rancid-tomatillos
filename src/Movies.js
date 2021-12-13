@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Movies({ moviesInfo }) {
   const film = moviesInfo.map((movie) => {
     return (
-      <Link to={`/${movie.id}`} key={movie.id}>
+      <Link to={`/movies/${movie.id}`} key={movie.id}>
         <MovieCard
           id={movie.id}
           title={movie.title}
