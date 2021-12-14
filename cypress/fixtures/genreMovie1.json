@@ -1,0 +1,19 @@
+{
+    "movie": {
+    "id": 613504,
+    "title": "After We Collided",
+    "poster_path": "https://image.tmdb.org/t/p/original//kiX7UYfOpYrMFSAGbI6j1pFkLzQ.jpg",
+    "backdrop_path": "https://image.tmdb.org/t/p/original//r5srC0cqU36n38azFnCyReEksiR.jpg",
+    "release_date": "2020-09-02",
+    "overview": "Tessa finds herself struggling with her complicated relationship with Hardin; she faces a dilemma that could change their lives forever.",
+    "genres": [
+    "Romance",
+    "Drama"
+    ],
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 105,
+    "tagline": "Can love overcome the past?",
+    "average_rating": 5.25
+    }
+    }

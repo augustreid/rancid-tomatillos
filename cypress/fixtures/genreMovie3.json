@@ -1,0 +1,19 @@
+{
+    "movie": {
+    "id": 550231,
+    "title": "The Secret: Dare to Dream",
+    "poster_path": "https://image.tmdb.org/t/p/original//5mCqEeBA0MW7H6akFrFQXJu68rU.jpg",
+    "backdrop_path": "https://image.tmdb.org/t/p/original//zRc6SG8V8WTTDrmZ78PgqjwYqoN.jpg",
+    "release_date": "2020-04-16",
+    "overview": "A widow with three children hires a handyman to fix her house during a major storm. When not doing home repairs, he shares his philosophy of believing in the power of the universe to deliver what we want.",
+    "genres": [
+    "Drama",
+    "Romance"
+    ],
+    "budget": 21000000,
+    "revenue": 0,
+    "runtime": 107,
+    "tagline": "",
+    "average_rating": 5
+    }
+    }

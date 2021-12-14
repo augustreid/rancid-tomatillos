@@ -33,6 +33,7 @@ class App extends Component {
       setTimeout(() => {fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${moviesId[i]}`)
       .then(response => response.json()) 
       .then(data => allMovies.push(data))
+      .catch(error => this.setState({error: true}))
       }, 500)
     }
     this.setState({ filmsInfo: allMovies })
@@ -42,6 +43,7 @@ class App extends Component {
   render() {
     return (
       <main>
+        {this.state.error && <p>Sorry, can't fetch Data</p>}
         {!this.state.loading && <div>
         <Header/>
         <Genre getDetailData={this.getDetailData} detailData={this.state.filmsInfo}/>
