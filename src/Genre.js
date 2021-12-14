@@ -5,10 +5,7 @@ import GenreDisplay from "./GenreDisplay";
 import "./Genre.css";
 
 class Genre extends Component {
-    constructor() {
-        super();
-    }
-
+ 
     componentDidMount = () => {
         this.props.getDetailData();
     }

@@ -8,7 +8,6 @@ function Description({currentFilmId, detailData}) {
     return film.movie.id === Number(currentFilmId)
 })
   return (
-        <>
         <section>
           <Poster backdropPath={currentMovie.movie.backdrop_path} title={currentMovie.movie.title}/>
           <h2>{currentMovie.movie.title}</h2>
@@ -16,8 +15,7 @@ function Description({currentFilmId, detailData}) {
           <p>{currentMovie.movie.overview}</p>
           <h3>{currentMovie.movie.average_rating.toFixed(1)}  ⭐️</h3>
           <Button />
-        </section>
-        </>
+        </section> 
     )
 }
 export default Description;
