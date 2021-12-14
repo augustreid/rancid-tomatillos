@@ -1,0 +1,20 @@
+{  
+    "movie": {
+    "id": 605499,
+    "title": "Monsoon",
+    "poster_path": "https://image.tmdb.org/t/p/original//xIKVeH1iAKJOYYh9lvObD3hYIaf.jpg",
+    "backdrop_path": "https://image.tmdb.org/t/p/original//48OhmVjmjqhB1TrevTMKwKUDetU.jpg",
+    "release_date": "2020-09-25",
+    "overview": "Kit can’t remember much of his native Vietnam. When he returns to the Land of the Golden Star for the first time in over thirty years, he takes in his local surroundings as any Western tourist would, and the environment is as exotic as the language is incomprehensible. The aim of Kit’s travels – to find a place to scatter his parents’ ashes – thus becomes part of a journey back to his roots and to the discovery of his identity, which external circumstances have rendered ambiguous and complex.",
+    "genres": [
+    "Drama",
+    "Romance"
+    ],
+    "budget": 0,
+    "revenue": 0,
+    "runtime": 85,
+    "tagline": "",
+    "average_rating": 5.25
+    }
+
+}

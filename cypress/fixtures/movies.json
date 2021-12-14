@@ -1,0 +1,28 @@
+{
+    "movies": [
+    {
+    "id": 613504,
+    "poster_path": "https://image.tmdb.org/t/p/original//kiX7UYfOpYrMFSAGbI6j1pFkLzQ.jpg",
+    "backdrop_path": "https://image.tmdb.org/t/p/original//r5srC0cqU36n38azFnCyReEksiR.jpg",
+    "title": "After We Collided",
+    "average_rating": 5.25,
+    "release_date": "2020-09-02"
+    },
+    {
+    "id": 605499,
+    "poster_path": "https://image.tmdb.org/t/p/original//xIKVeH1iAKJOYYh9lvObD3hYIaf.jpg",
+    "backdrop_path": "https://image.tmdb.org/t/p/original//48OhmVjmjqhB1TrevTMKwKUDetU.jpg",
+    "title": "Monsoon",
+    "average_rating": 5.25,
+    "release_date": "2020-09-25"
+    },
+    {
+    "id": 550231,
+    "poster_path": "https://image.tmdb.org/t/p/original//5mCqEeBA0MW7H6akFrFQXJu68rU.jpg",
+    "backdrop_path": "https://image.tmdb.org/t/p/original//zRc6SG8V8WTTDrmZ78PgqjwYqoN.jpg",
+    "title": "The Secret: Dare to Dream",
+    "average_rating": 5,
+    "release_date": "2020-04-16"
+    }
+    ]
+}
