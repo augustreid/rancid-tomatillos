@@ -46,10 +46,10 @@ class App extends Component {
         {this.state.error && <p>Sorry, can't fetch Data</p>}
         {!this.state.loading && <div>
         <Header/>
-        <Genre loading={this.state.loading} getDetailData={this.getDetailData} detailData={this.state.filmsInfo}/>
+        <Genre getDetailData={this.getDetailData} detailData={this.state.filmsInfo}/>
         <Routes>
-          <Route path="/" element={<Movies moviesInfo={this.state.movies} detailData={this.state.filmsInfo} getDetailData={this.getDetailData}/>}/>
-          <Route path="/movies/:id"  element={<Detail moviesInfo={this.state.movies} detailData={this.state.filmsInfo}/>}/> 
+          <Route path="/" element={<Movies moviesInfo={this.state.movies}/>}/>
+          <Route path="/movies/:id" element={<Detail detailData={this.state.filmsInfo}/>}/> 
         </Routes>
         </div>}
       </main>

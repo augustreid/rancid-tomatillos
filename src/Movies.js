@@ -17,9 +17,10 @@ function Movies({ moviesInfo }) {
     );
   });
   
-  return (<div className="movies-container">
-            {film}
-          </div>);
-}
+  return (
+    <div className="movies-container">
+      {film}
+    </div>);
+  }
 
 export default Movies;

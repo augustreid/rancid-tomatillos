@@ -8,7 +8,7 @@ const Detail = ({detailData}) => {
 
   return (
     <div className="movie-details">
-      <Description detailData= {detailData} currentFilmId={currentFilm}/>
+      <Description detailData={detailData} currentFilmId={currentFilm}/>
     </div> 
   );
 }

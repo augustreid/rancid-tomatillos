@@ -1,20 +1,20 @@
 import React, {Component} from "react"
-import { NavLink, Routes, Route, Link } from "react-router-dom";
+import { NavLink, Routes, Route} from "react-router-dom";
 import Button from "./Button";
 import GenreDisplay from "./GenreDisplay";
+import "./Genre.css";
 
 class Genre extends Component {
-    constructor() {
-        super();
-    }
-
+ 
     componentDidMount = () => {
         this.props.getDetailData();
     }
 
       render() {
           return (
-                <nav>
+                <div className="genre-page">
+                <nav className="nav-bar">
+                  <Button />
                   <NavLink to={"/Action"}>Action</NavLink>
                   <NavLink to={"/Comedy"}>Comedy</NavLink>
                   <NavLink to={"/Crime"}>Crime</NavLink>
@@ -23,11 +23,11 @@ class Genre extends Component {
                   <NavLink to={"/Horror"}>Horror</NavLink>
                   <NavLink to={"/Thriller"}>Thriller</NavLink>
                   <NavLink to={"/Romance"}>Romance</NavLink>
-                  <Button/>
+                  </nav>
                   <Routes>
                      {this.props.detailData && <Route path="/:genre" element={<GenreDisplay detailData={this.props.detailData} moviesInfo={this.props.moviesInfo}/>}/>}
                   </Routes>
-              </nav>
+              </div>
           )
       }
     }

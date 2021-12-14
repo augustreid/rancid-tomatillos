@@ -19,7 +19,7 @@ function MovieCard({ title, posterPath, averageRating }) {
     <div className={`${cardColor} movie-card`}>
       <img
         src={posterPath}
-        alt="poster image of movie"
+        alt={`poster for ${title}`}
         className="card-poster"
       />
       <div className="title-rating">
